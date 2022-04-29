@@ -1,0 +1,398 @@
+[
+  {
+    "conditions": [
+      {
+        "alternatives": true,
+        "anchoring": "contains",
+        "pattern": "bags"
+      }
+    ],
+    "consequence": {
+      "promote": [
+        {
+          "objectIDs": [
+            "A0E200000001YU8"
+          ],
+          "position": 0
+        },
+        {
+          "objectIDs": [
+            "A0E200000002EG0"
+          ],
+          "position": 1
+        }
+      ],
+      "filterPromotes": true,
+      "hide": [
+        {
+          "objectID": "A0E2000000027DV"
+        },
+        {
+          "objectID": "A0E2000000022H3"
+        }
+      ]
+    },
+    "enabled": true,
+    "objectID": "qr-1642156379687"
+  },
+  {
+    "conditions": [
+      {
+        "alternatives": true,
+        "anchoring": "contains",
+        "pattern": "customer support"
+      }
+    ],
+    "consequence": {
+      "filterPromotes": true,
+      "userData": {
+        "redirectUrl": "/customer-support"
+      }
+    },
+    "enabled": true,
+    "objectID": "qr-1641934153499"
+  },
+  {
+    "conditions": [
+      {
+        "alternatives": true,
+        "anchoring": "contains",
+        "pattern": "size {facet:available_sizes}"
+      }
+    ],
+    "consequence": {
+      "params": {
+        "query": "",
+        "automaticFacetFilters": [
+          {
+            "facet": "available_sizes",
+            "disjunctive": false,
+            "score": 0
+          }
+        ]
+      },
+      "filterPromotes": true
+    },
+    "description": "Relevant size only",
+    "enabled": true,
+    "objectID": "qr-1641933605846"
+  },
+  {
+    "conditions": [
+      {
+        "alternatives": true,
+        "anchoring": "contains",
+        "pattern": "sweat"
+      },
+      {
+        "alternatives": true,
+        "anchoring": "contains",
+        "pattern": "sweater"
+      }
+    ],
+    "consequence": {
+      "filterPromotes": true,
+      "userData": {
+        "coupon": "HOHOHO60",
+        "image": {
+          "desktop_url": "https://images.unsplash.com/photo-1574201635302-388dd92a4c3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80",
+          "mobile_url": "https://"
+        },
+        "position": 0,
+        "size": {
+          "height": 1,
+          "width": 1
+        },
+        "subtitle": "Up to 60%",
+        "title": "Christmas sweaters on sale",
+        "type": "salesCard"
+      }
+    },
+    "enabled": true,
+    "objectID": "qr-1641822821413"
+  },
+  {
+    "consequence": {
+      "filterPromotes": true,
+      "userData": {
+        "gridSpanLaptop": 1,
+        "gridSpanMobile": 1,
+        "image": {
+          "desktop_url": "https://res.cloudinary.com/hugo-valla/image/upload/v1641220366/L_ptpbwc.png",
+          "mobile_url": "https://api.lorem.space/image/shoes?w-300&h-300"
+        },
+        "isSalesCardDisplay": 6,
+        "position": 7,
+        "size": {
+          "height": 1,
+          "width": 3
+        },
+        "title": "",
+        "type": "noCta"
+      }
+    },
+    "enabled": true,
+    "objectID": "qr-1641822619384"
+  },
+  {
+    "conditions": [
+      {
+        "alternatives": true,
+        "anchoring": "contains",
+        "pattern": "woman pants"
+      }
+    ],
+    "consequence": {
+      "promote": [
+        {
+          "objectIDs": [
+            "M0E20000000DLWV"
+          ],
+          "position": 0
+        },
+        {
+          "objectIDs": [
+            "M0E20000000E5HL"
+          ],
+          "position": 5
+        },
+        {
+          "objectIDs": [
+            "M0E20000000F6ZN"
+          ],
+          "position": 9
+        },
+        {
+          "objectIDs": [
+            "M0E20000000F585"
+          ],
+          "position": 8
+        }
+      ],
+      "filterPromotes": true
+    },
+    "enabled": true,
+    "objectID": "qr-1641754024504"
+  },
+  {
+    "conditions": [
+      {
+        "filters": "(\"hierarchical_categories.lvl0\":\"Men\")"
+      }
+    ],
+    "consequence": {
+      "filterPromotes": true,
+      "userData": {
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iste eveniet harum officia blanditiis corporis enim pariatur autem quidem ipsam illum distinctio ipsum, nobis et consequatur minima dolore adipisci ad.",
+        "image": {
+          "desktop": "/static/images/banners/men-desktop.jpg",
+          "mobile": "/static/images/banners/men-mobile.jpg"
+        },
+        "title": "Mens"
+      }
+    },
+    "enabled": true,
+    "objectID": "qr-1639486193298"
+  },
+  {
+    "conditions": [
+      {
+        "alternatives": true,
+        "anchoring": "contains",
+        "pattern": "Cap"
+      }
+    ],
+    "consequence": {
+      "filterPromotes": true,
+      "userData": {
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iste eveniet harum officia blanditiis corporis enim pariatur autem quidem ipsam illum distinctio ipsum, nobis et consequatur minima dolore adipisci ad.",
+        "image": {
+          "desktop": "/static/images/banners/cap-desktop.jpg",
+          "mobile": "/static/images/banners/cap-mobile.jpg"
+        },
+        "title": "Brooklyn Beckham's Caps"
+      }
+    },
+    "description": "Promotional Banner",
+    "enabled": true,
+    "objectID": "qr-1639486049399"
+  },
+  {
+    "conditions": [
+      {
+        "alternatives": false,
+        "anchoring": "is",
+        "context": "winter-collection-2021-men",
+        "pattern": ""
+      }
+    ],
+    "consequence": {
+      "promote": [
+        {
+          "objectIDs": [
+            "M0E20000000E2QT"
+          ],
+          "position": 0
+        },
+        {
+          "objectIDs": [
+            "M0E20000000F1TF"
+          ],
+          "position": 1
+        },
+        {
+          "objectIDs": [
+            "M0E20000000FCJB"
+          ],
+          "position": 2
+        },
+        {
+          "objectIDs": [
+            "M0E20000000FBH8"
+          ],
+          "position": 3
+        },
+        {
+          "objectIDs": [
+            "M0E20000000E01M"
+          ],
+          "position": 4
+        },
+        {
+          "objectIDs": [
+            "M0E20000000ELEL"
+          ],
+          "position": 5
+        },
+        {
+          "objectIDs": [
+            "M0E20000000EUTF"
+          ],
+          "position": 6
+        },
+        {
+          "objectIDs": [
+            "M0E20000000DTZB"
+          ],
+          "position": 7
+        },
+        {
+          "objectIDs": [
+            "M0E20000000E2NX"
+          ],
+          "position": 8
+        },
+        {
+          "objectIDs": [
+            "M0E20000000DGH7"
+          ],
+          "position": 9
+        }
+      ],
+      "filterPromotes": true
+    },
+    "description": "Winter collection men (Carousel)",
+    "enabled": true,
+    "objectID": "qr-1639485726847"
+  },
+  {
+    "conditions": [
+      {
+        "alternatives": false,
+        "anchoring": "is",
+        "context": "winter-collection-2021-women",
+        "pattern": ""
+      }
+    ],
+    "consequence": {
+      "promote": [
+        {
+          "objectIDs": [
+            "M0E20000000FBKL"
+          ],
+          "position": 0
+        },
+        {
+          "objectIDs": [
+            "M0E20000000DJU1"
+          ],
+          "position": 1
+        },
+        {
+          "objectIDs": [
+            "M0E20000000DG2H"
+          ],
+          "position": 2
+        },
+        {
+          "objectIDs": [
+            "M0E20000000E1HU"
+          ],
+          "position": 3
+        },
+        {
+          "objectIDs": [
+            "M0E20000000DUAZ"
+          ],
+          "position": 4
+        },
+        {
+          "objectIDs": [
+            "M0E20000000E2FZ"
+          ],
+          "position": 5
+        }
+      ],
+      "filterPromotes": true
+    },
+    "description": "winter collection women (carousel)",
+    "enabled": true,
+    "objectID": "qr-1639485568350"
+  },
+  {
+    "conditions": [
+      {
+        "alternatives": true,
+        "anchoring": "is",
+        "filters": "(\"gender\":\"men\")",
+        "pattern": "shirt"
+      }
+    ],
+    "consequence": {
+      "params": {
+        "optionalFilters": [
+          [
+            "hierarchical_categories.lvl2:Men > Clothing > Shirts<score=1>"
+          ]
+        ]
+      },
+      "filterPromotes": true
+    },
+    "description": "boost shirts over tshirts",
+    "enabled": true,
+    "objectID": "qr-1639485488497"
+  },
+  {
+    "conditions": [
+      {
+        "alternatives": true,
+        "anchoring": "is",
+        "filters": "(\"gender\":\"women\")",
+        "pattern": "shirt"
+      }
+    ],
+    "consequence": {
+      "params": {
+        "optionalFilters": [
+          [
+            "hierarchical_categories.lvl2:Women > Clothing > Shirts<score=1>"
+          ]
+        ]
+      },
+      "filterPromotes": true
+    },
+    "description": "boost shirts over tshirts",
+    "enabled": true,
+    "objectID": "qr-1639485243520"
+  }
+]
