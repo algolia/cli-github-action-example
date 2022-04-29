@@ -118,7 +118,8 @@
     "replicas": [
         "prod_ECOM_asc_price",
         "prod_ECOM_desc_price",
-        "prod_ECOM_custom_ranking_reviews"
+        "prod_ECOM_custom_ranking_reviews",
+        "test"
     ],
     "searchableAttributes": [
         "unordered(name)",
