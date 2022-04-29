@@ -1,4 +1,4 @@
-name: Backup settings
+name: Backup rules
 
 on:
   schedule:
