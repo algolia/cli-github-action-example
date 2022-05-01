@@ -15,3 +15,11 @@ By doing a regular versionned backup of your Algolia data, you can more easily t
 Examples:
 - [Automatic backup of your Settings](.github/workflows/backup-settings.yml)
 - [Automatic backup of your Rules](.github/workflows/backup-rules.yml)
+
+
+### 2. Automatic Deployment of your Algolia data
+
+In a context of multiple environments (development, production, etc.), you can more easily control, validate and deploy the changes to your Algolia data accross all your environments.
+
+Examples:
+- [Automatic Deployment of your Settings](.github/workflows/deploy-settings.yml)

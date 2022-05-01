@@ -1,0 +1,28 @@
+name: Deploy settings
+
+on:
+  push:
+    branches:
+      - develop
+      - master
+    paths:
+      - 'deploy/settings.json'
+
+jobs:
+  deploy_settings:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: Homebrew/actions/setup-homebrew@master
+      - name: Setup
+        run: |
+          brew tap algolia/algolia-cli
+          brew install algolia
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+      - name: Deploy settings
+        run: algolia settings import ${{github.ref_name}}_${{secrets.ALGOLIA_INDEX_NAME}} -F deploy/settings.json
+        env:
+          ALGOLIA_APPLICATION_ID: ${{ secrets.ALGOLIA_APPLICATION_ID }}
+          ALGOLIA_ADMIN_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
+          ALGOLIA_INDEX_NAME: ${{ secrets.ALGOLIA_INDEX_NAME }}
