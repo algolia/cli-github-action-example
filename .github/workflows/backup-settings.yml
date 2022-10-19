@@ -15,7 +15,7 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
       - name: Save settings
-        run: algolia settings list $ALGOLIA_INDEX_NAME | python -m json.tool > backup/settings.json
+        run: algolia settings get $ALGOLIA_INDEX_NAME | python -m json.tool > backup/settings.json
         env:
           ALGOLIA_APPLICATION_ID: ${{ secrets.ALGOLIA_APPLICATION_ID }}
           ALGOLIA_ADMIN_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
