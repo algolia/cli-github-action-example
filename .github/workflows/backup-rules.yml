@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: algolia/setup-algolia-cli@v1
+      - uses: algolia/setup-algolia-cli@master
       - name: Setup
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
