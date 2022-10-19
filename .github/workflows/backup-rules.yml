@@ -15,11 +15,10 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
       - name: Save rules
-        run: algolia rule browse $ALGOLIA_INDEX_NAME | jq -s '.' > backup/rules.json
+        run: algolia rule browse ${{ secrets.ALGOLIA_INDEX_NAME }} | jq -s '.' > backup/rules.json
         env:
           ALGOLIA_APPLICATION_ID: ${{ secrets.ALGOLIA_APPLICATION_ID }}
           ALGOLIA_ADMIN_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
-          ALGOLIA_INDEX_NAME: ${{ secrets.ALGOLIA_INDEX_NAME }}
       - name: Commit rules
         run: |
           git add .
